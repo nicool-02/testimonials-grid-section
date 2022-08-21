@@ -55,17 +55,19 @@ h3, p, .profile-name{
     box-shadow: 1rem 0 1.5rem var(--shadow);
     padding: 1.5rem;
     display: grid;
+    transition: .3s ease-in-out;
+}
+
+.grid-items:hover{
+    transform: scale(1.02);
 }
 
 .item1{
     grid-column: 1/3;
     background-color: var(--box1);
-}
-
-img[src="images/bg-pattern-quotation.svg"]{
-    position: absolute;
-    top: 9%;
-    left: 37%;
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top 0 left 23rem ;
 }
 
 .item2{
@@ -103,6 +105,7 @@ img[src="images/bg-pattern-quotation.svg"]{
     height: 2rem;
     border-radius: 50%;
     border: 2px solid #fff;
+    transition: .3s ease;
 }
 
 .profile-name p::after{
@@ -138,7 +141,14 @@ img[src="images/bg-pattern-quotation.svg"]{
         padding-top: 1rem;
     }
 
-    img[src="images/bg-pattern-quotation.svg"]{
-        left: 65%;
+    .item1{
+        background-position: top 0 left 20rem ;
+    }
+}
+
+@media (max-width: 470px){
+
+    .item1{
+        background-position: top 0 left 12rem ;
     }
 }
