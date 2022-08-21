@@ -94,7 +94,7 @@ h3, p, .profile-name{
 .profile-name{
     display: flex;
     width: 10rem;
-    height: auto;
+    height: fit-content;
     font-size: 1rem;
     color: var(--White);
     gap: 1rem;
@@ -105,13 +105,20 @@ h3, p, .profile-name{
     height: 2rem;
     border-radius: 50%;
     border: 2px solid #fff;
-    transition: .3s ease;
+}
+
+#pat{
+    border: 2px solid var(--box1);
 }
 
 .profile-name p::after{
     content: " Verified Graduate";
     font-size: .8rem;
     color: var(--shadow);
+}
+
+.cmmn-clr0{
+    color: var(--White);
 }
 
 .cmmn-clr{
@@ -143,6 +150,10 @@ h3, p, .profile-name{
 
     .item1{
         background-position: top 0 left 20rem ;
+    }
+
+    .prf-img{
+        place-self: end;
     }
 }
 
